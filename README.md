@@ -25,7 +25,6 @@ import javafx.scene.shape.Rectangle;
 import static javafx.scene.text.Font.font;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
-
 public class tictactoe extends Application{
     
     private boolean turnoX=true; // bandera para determinar el turno de quien es
@@ -84,9 +83,9 @@ public class tictactoe extends Application{
         
         Line linea = new Line(); //importamos la animación de una linea siendo dibujada 
                 linea.setStartX(combinaciones.espacios[0].getCenterX());
-                linea.setStartY(combinaciones.espacios[0].getCenterX());
+                linea.setStartY(combinaciones.espacios[0].getCenterY());
                 linea.setEndX(combinaciones.espacios[0].getCenterX());
-                linea.setEndY(combinaciones.espacios[0].getCenterX());
+                linea.setEndY(combinaciones.espacios[0].getCenterY());
                 
                 root.getChildren().add(linea);
                 Timeline timeline = new Timeline(); //este metodo ayuda a traducir la funcion setEnd
